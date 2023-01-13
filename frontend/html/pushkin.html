@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>UBER EATS</title>
+    <title>Pushkin</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="{{ url_for('js', path='/sc.js') }}"></script>
-    <link rel="stylesheet" href="{{ url_for('css', path='/style.css') }}">
+    <script src="/js/sc.js"></script>
+    <link rel="stylesheet" href="css/style_pushkin.css">
 </head>
-
-<a id="button"></a>
 
 <body>
 
@@ -31,7 +29,7 @@
                     <div class="header_wraper">
                         <div class="header_logo">
                             <a href="#" class="header_logo_link">
-                                <img src="{{ url_for('img', path='/logo.svg') }}" alt="Uber Eat" class="header_logo_pic">
+                                <img src="/images/logo.svg" alt="Uber Eat" class="header_logo_pic">
                             </a>
                         </div>
                         <div class="heder_items">
@@ -40,7 +38,7 @@
                             </div>
                             <div class="header_basket hidden-xs">
                                 <a href="#" class="header_basket_link">
-                                    <img src="{{ url_for('img', path='/basket.svg') }}" alt="Basket" class="header_basket_pic">
+                                    <img src="/images/basket.svg" alt="Basket" class="header_basket_pic">
                                 </a>
                             </div>
                         </div>
@@ -50,138 +48,159 @@
         </div>
     </div>
 
-    <!----------------Navigation----------------------------------------->
 
-    <div class="wraper">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="search_wraper">
-                    <nav class="search">
-                        <form action="" class="search_form">
-                            <input type="search" name="q" placeholder="Поиск по ресторанам и кухням"
-                                class="search_field">
-                        </form>
+    <!------------------Main----------------------------------------------->
+    <main>
+        <div class="jumbotron_container">
+            <div class="wraper">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5 col-xl-5">
+                        <div class="wraper_traktir">
+                            <div class="traktir_card">Трактир «Пушкин»</div>
+                            <div class="traktir_info">
+                                <div class="traktir_kitchen">₽₽₽ • Европейская</div>
+                                <div class="traktir_time">40-50 мин</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------Menu----------------------------------------------->
+        <div class="wraper">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-xl-8">
+                    <nav class="header_nav hidden-xs">
+                        <div class="menu_wrap">
+                            <ul class="header_list">
+                                <li class="header_item">
+                                    <a href="#" class="header_link">Закуски</a>
+                                </li>
+                                <li class="header_item">
+                                    <a href="#" class="header_link">Салаты</a>
+                                <li class="header_item">
+                                    <a href="#" class="header_link">Супы</a>
+                                </li>
+                                <li class="header_item">
+                                    <a href="#" class="header_link">Горячие блюда</a>
+                                </li>
+                                <li class="header_item">
+                                    <a href="#" class="header_link">Гарниры</a>
+                                <li class="header_item">
+                                    <a href="#" class="header_link">Десерты</a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!------------------Main----------------------------------------------->
-    <main>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="menu_underlogo_line hidden-xs">
+                    <hr />
+                </div>
+            </div>
+        </div>
         <div class="wraper">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="main_title">
-                        <h1>Рестораны в Москве</h1>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5 col-xl-5 zakuski">
+                    <div class="tasks">Закуски</div>
+                    <div class="line hidden-lg hidden-xl hidden-md">
+                        <hr />
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
+        </div>
+
+        <div class="wraper">
+            <div class="row main_cont">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="#" class="rest_link" target="#">
                         <div class="card">
-                            <img src="{{ url_for('img', path='/Makdonalds_Gazetnyi.svg') }}" alt="Makdonalds_Gazetnyi" style="width:100%">
+                            <div class="card_img"><img src="/images/pushkin/seld.svg" alt="Seld" style="width:100%">
+                            </div>
                             <div class="card_container">
-                                <div class="card_restaurent">Макдоналдс — Газетный</div>
-                                <div class="card_kitchen">₽₽ • Бургеры</div>
-                                <div class="card_time">25 - 35 мин</div>
+                                <div class="kitchen_cont">
+                                    <div class="card_restaurent">Сельдь на бородинском хлебе</div>
+                                    <div class="card_kitchen">С яйцом и огурцом</div>
+                                </div>
+                                <div class="card_time">240 ₽</div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="#" class="rest_link" target="#">
                         <div class="card">
-                            <img src="{{ url_for('img', path='/Dim_Sum.svg') }}" alt="Dim_Sum" style="width:100%">
+                            <div class="card_img"><img src="/images/pushkin/Solenia.svg" alt="Solenia"
+                                    style="width:100%"></div>
                             <div class="card_container">
-                                <div class="card_restaurent">DimSum & Co — ЦДМ</div>
-                                <div class="card_kitchen">₽ • Японская • Китайская • Азиатская</div>
-                                <div class="card_time">40 - 50 мин</div>
+                                <div class="kitchen_cont">
+                                    <div class="card_restaurent">Соленья ассорти</div>
+                                    <div class="card_kitchen"></div>
+                                </div>
+                                <div class="card_time">320 ₽</div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="#" class="rest_link" target="#">
                         <div class="card">
-                            <img src="{{ url_for('img', path='/Dvizhok.svg') }}" alt="Dvizhok" style="width:100%">
+                            <div class="card_img"><img src="/images/pushkin/mashroom.svg" alt="Mashroom"
+                                    style="width:100%"></div>
                             <div class="card_container">
-                                <div class="card_restaurent">ДвижОК — Манежная></div>
-                                <div class="card_kitchen">₽ • Американская • Европейская</div>
-                                <div class="card_time">35 - 45 мин</div>
+                                <div class="kitchen_cont">
+                                    <div class="card_restaurent">Грибы маринованные</div>
+                                    <div class="card_kitchen"></div>
+                                </div>
+                                <div class="card_time">300 ₽</div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="#" class="rest_link" target="#">
                         <div class="card">
-                            <img src="{{ url_for('img', path='/Nha.svg') }}" alt="NHA" style="width:100%">
+                            <div class="card_img"><img src="/images/pushkin/Salo.svg" alt="Salo" style="width:100%">
+                            </div>
                             <div class="card_container">
-                                <div class="card_restaurent">НЯ — NHA</div>
-                                <div class="card_kitchen">₽₽ • Вьетнамская</div>
-                                <div class="card_time">30 - 40 мин</div>
+                                <div class="kitchen_cont">
+                                    <div class="card_restaurent">Сало домашнее с горчицей</div>
+                                    <div class="card_kitchen"></div>
+                                </div>
+                                <div class="card_time">320 ₽</div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="#" class="rest_link" target="#">
                         <div class="card">
-                            <img src="{{ url_for('img', path='/Tochka_Dzi.svg') }}" alt="T_Dzi" style="width:100%">
+                            <div class="card_img"><img src="/images/pushkin/Semga.svg" alt="Semga" style="width:100%">
+                            </div>
                             <div class="card_container">
-                                <div class="card_restaurent">Точка Дзы — Цветной></div>
-                                <div class="card_kitchen">₽₽ • Вьетнамская</div>
-                                <div class="card_time">40 - 50 мин</div>
+                                <div class="kitchen_cont">
+                                    <div class="card_restaurent">Малосольная семга</div>
+                                    <div class="card_kitchen"></div>
+                                </div>
+                                <div class="card_time">390 ₽</div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="#" class="rest_link" target="#">
                         <div class="card">
-                            <img src="{{ url_for('img', path='/Cinnabon.svg') }}" alt="Cinnabon" style="width:100%">
-                            <div class="card_container">
-                                <div class="card_restaurent">Cinnabon></div>
-                                <div class="card_kitchen">₽ • Выпечка • Десерты • Капкейки</div>
-                                <div class="card_time">25 - 35 мин</div>
+                            <div class="card_img"><img src="/images/pushkin/tongue.svg" alt="tongue" style="width:100%">
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
-                        <div class="card">
-                            <img src="{{ url_for('img', path='/Pizzelove.svg') }}" alt="PIZZELOVE" style="width:100%">
                             <div class="card_container">
-                                <div class="card_restaurent">PIZZELOVE></div>
-                                <div class="card_kitchen">₽₽ • Пицца</div>
-                                <div class="card_time">15 - 25 мин</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
-                        <div class="card">
-                            <img src="{{ url_for('img', path='/Zyu.svg') }}" alt="Zyu" style="width:100%">
-                            <div class="card_container">
-                                <div class="card_restaurent">Zю кафе — Тверская></div>
-                                <div class="card_kitchen">₽₽ • Японская</div>
-                                <div class="card_time">25 - 35 мин</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <a href="pushkin.html" class="rest_link" target="#">
-                        <div class="card">
-                            <img src="{{ url_for('img', path='/BQ.svg') }}" alt="BQ" style="width:100%">
-                            <div class="card_container">
-                                <div class="card_restaurent">Bar BQ Cafe — Манежная></div>
-                                <div class="card_kitchen">₽₽₽ • Европейская</div>
-                                <div class="card_time">30 - 40 мин</div>
+                                <div class="kitchen_cont">
+                                    <div class="card_restaurent">Язык говяжий с хреном</div>
+                                    <div class="card_kitchen"></div>
+                                </div>
+                                <div class="card_time">350 ₽</div>
                             </div>
                         </div>
                     </a>
@@ -199,7 +218,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="footer_logo">
                             <a href="#" class="footer_logo_link">
-                                <img src="{{ url_for('img', path='/footer-logo.svg') }}" alt="Logo" class="footer_logo_pic">
+                                <img src="/images/footer-logo.svg" alt="Logo" class="footer_logo_pic">
                             </a>
                         </div>
                     </div>
@@ -210,7 +229,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="select_language">
-                            <img src="{{ url_for('img', path='/world.svg') }}" alt="">
+                            <img src="/images/world.svg" alt="">
                             <select name="lang" id="lang">
                                 <option value="ru">Русский</option>
                                 <option value="en">Английски</option>
@@ -226,13 +245,13 @@
                             </div>
                             <div class="social_icons">
                                 <a href="#" class="social_fb">
-                                    <img src="{{ url_for('img', path='/facebook.svg') }}" alt="FB" class="facebook_pic">
+                                    <img src="/images/facebook.svg" alt="FB" class="facebook_pic">
                                 </a>
                                 <a href="#" class="social_twitter">
-                                    <img src="{{ url_for('img', path='/twitter.svg') }}" alt="twitter" class="twitter_pic">
+                                    <img src="/images/twitter.svg" alt="twitter" class="twitter_pic">
                                 </a>
                                 <a href="#" class="social_instagram">
-                                    <img src="{{ url_for('img', path='/instagram.svg') }}" alt="Logo" class="instagram_pic">
+                                    <img src="/images/instagram.svg" alt="Logo" class="instagram_pic">
                                 </a>
                             </div>
                         </div>
@@ -260,10 +279,10 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="footer_downloads">
                             <div class="dlink">
-                                <a href="#"><img src="{{ url_for('img', path='/App_Store.png') }}" alt="" /></a>
+                                <a href="#"><img src="/images/App_Store.png" alt="" /></a>
                             </div>
                             <div class="dlink">
-                                <a href="#"><img src="{{ url_for('img', path='/Gplay.png') }}" alt="" /></a>
+                                <a href="#"><img src="/images/Gplay.png" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -295,7 +314,7 @@
     <div class="wraper">
         <div class="row">
             <div class="col-xs-3">
-                <div ID="toTop"><img src="{{ url_for('img', path='/btn-up.png') }}" alt=""> </div>
+                <div ID="toTop"><img src="/images/btn-up.png" alt=""> </div>
             </div>
         </div>
     </div>
