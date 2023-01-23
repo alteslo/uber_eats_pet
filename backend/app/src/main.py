@@ -1,7 +1,11 @@
 from fastapi import FastAPI
+from backend.app.src.core.logging.logging import logger
+from backend.app.src.core.settings import settings
 
 from backend.app.src.main_page.router import (main_page_css, main_page_img,
                                               main_page_js, main_page_router)
+
+logger.info(f"start logging {settings.LOG_PATH}")
 
 app = FastAPI()
 
